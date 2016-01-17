@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Serasi | Sistem Respirasi</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="assets/img/serasi-favicon.png">
+
+    <!--Tko bootstrap dkk-->
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/main.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/animate-custom.css' rel='stylesheet' type='text/css'>
+
+    <link href='assets/css/tambah-btn.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-font.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-serasi.css' rel='stylesheet' type='text/css'>
+    <link href="assets/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="assets/js/jmodis.js"></script>
+    <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script>
+        $(document).ready(function() {
+            //semua links dengam akhiran ekstensi gambar
+            var thumbnails = 'a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]';
+
+            //menambah class "fancybox" ke thumbnails dan dijadikan satu group "rel" untuk mengaktifkan tombol previous/next
+            jQuery(thumbnails).addClass("fancybox").attr("rel", "lightbox");
+
+            //memanggil fancybox
+            jQuery('.fancybox').fancybox({
+                padding: 0,
+                //mendapatkan alt dari img untuk title fancybox
+                beforeShow: function() {
+                    var alt = this.element.find('img').attr('alt');
+                    this.inner.find('img').attr('alt', alt);
+                    this.title = alt;
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background:no  ">
+        <div class="navbar-header">
+            <span class="navbar-toggle nav-home"><a href="home.html"><i class="fa fa-big fa-home"></i></a></span>
+            <span class="navbar-toggle nav-home" style="float:right; padding-right:0px;"><a href="materi-belajar.html"><i class="fa fa-big fa-book"></i></a></span>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-fixed-top" style="padding-top:6px; margin: 0 45px;">
+        <span class="navbar-toggle navbar-brand nav-materi">Struktur Jaringan Organ Pernapasan</span>
+    </nav>
+
+
+    <div class="centering text-center">
+        <div class="panel-motivasi panel-default">
+            <div class="panel-body">
+                <p>Setiap makhluk hidup dapat bernapas dengan mudah dan nyaman karena nikmat yang diberikan oleh Tuhan Yang Maha Esa. Tuhan telah menciptakan organ pernapasan yang tersusun atas struktur jaringan yang sangat kompleks dan sistematis sehingga bisa mendukung mekanisme pernapasan pada manusia. Berikut merupakan organ pernapasan manusia.</p>
+                <!--
+                <figure class="gambar-tengah img-responsive">
+                    <a href="assets/img/materi-01/Struktur_Jaringan_Alat_Pernapasan.jpg"><img src="assets/img/materi-01/Struktur_Jaringan_Alat_Pernapasan.jpg" width="300px" class="img-responsive tengah no-bayang" alt="Struktur Jaringan Organ Pernapasan" title="Struktur Jaringan Organ Pernapasan"></a>
+                </figure>
+                <div class="row" style="margin-top: -100px;">
+                <div class="row" style="margin: 0;">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <a class="btn btn-sm btn-primary" href="materi-01.html">Rongga Hidung</a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <a class="btn btn-sm btn-primary" href="materi-01.html">Bronkus</a>
+                    </div>
+                </div>
+                <div class="row" style="margin: 0;">
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <a class="btn btn-sm btn-primary" href="materi-01.html">Faring</a>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3">
+                    </div>
+                    <div class="col-xs-4 col-sm-4 col-md-4">
+                        <a class="btn btn-sm btn-primary" href="materi-01.html">Bronkiolus</a>
+                    </div>
+                </div>
+                </div>
+-->
+
+                <table class="table tabel-sjop">
+
+                    <tr>
+                        <td style="border:none;"></td>
+                        <td rowspan="11" style="padding:0;  border:none;">
+                            <figure class="gambar-tengah img-responsive">
+                                <img src="assets/img/materi-01/sjop.jpg" class="img-responsive tengah no-bayang gambar-sjap" alt="Struktur Jaringan Organ Pernapasan" title="Struktur Jaringan Organ Pernapasan"></a>
+                            </figure>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:none;"></td>
+                    </tr>
+                    <tr>
+                        <td style="padding:3px 0 !important; border:none;"><a class="btn btn-xs btn-primary" href="materi-01-01.html"><span class="badge">1</span><br>Rongga Hidung</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding:3px 0 !important; border:none;"><a class="btn btn-xs btn-primary" href="materi-01-07.html"><span class="badge">2</span> Faring</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding:3px 0 !important; border:none;"><a class="btn btn-xs btn-primary" href="materi-01-10.html"><span class="badge">3</span> Laring</a></td>
+                    </tr>
+                    <tr>
+                        <td style="padding:3px 0 !important; border:none;"><a class="btn btn-xs btn-primary" href="materi-01-15.html"><span class="badge">4</span> Trakea</a></td>
+                    </tr>
+                    <tr>
+
+                        <td style="padding:3px 0 !important; border:none;"><a class="btn btn-xs btn-primary" href="materi-01-20.html"><span class="badge">5</span> Bronkus</a></td>
+                    </tr>
+                    <tr>
+
+                        <td style="padding:3px 0 !important; border:none;"><a class="btn btn-xs btn-primary" href="materi-01-26.html"><span class="badge">6</span> Bronkiolus</a></td>
+                    </tr>
+                    <tr>
+
+                        <td style="padding:3px 0 !important; border:none;"><a class="btn btn-xs btn-primary" href="materi-01-30.html"><span class="badge">7</span> Paru-paru</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border:none;"></td>
+                    </tr>
+                    <tr>
+                        <td style="border:none;"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <!--    <a class="btn-next btn-prev btn-lg"><i class="fa fa-arrow-circle-left"></i></a>-->
+        <a href="materi-01-01.html" class="btn-next btn-lg"><i class="fa fa-arrow-circle-right"></i></a>
+
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/retina.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+        <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+</body>
+
+</html>

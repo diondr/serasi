@@ -1,0 +1,403 @@
+body {
+    font-family: 'roboto_regular';
+    font-size: 13px;
+    color: #555;
+    background: rgba(229, 220, 171, 0.1);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'alegreyasans_black';
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+strong {
+    font-family: 'roboto_bold';
+    font-weight: normal;
+}
+
+
+/* Umum */
+
+.rounded {
+    border-radius: 3px;
+}
+
+.btn {
+    -webkit-box-shadow: 2px 3px 0.1px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 3px 0.1px rgba(0, 0, 0, 0.1);
+    font-family: 'roboto_bold';
+    font-size: 13px;
+    white-space: normal;
+    /* Agar text dalam button jadi wrap */
+}
+
+.fa-big {
+    font-size: 23px;
+}
+
+.fa-big2 {
+    font-size: 33px;
+}
+
+
+/* Ceg Tengah */
+
+.container-fluid {
+    height: 100%;
+    display: table;
+    width: 100%;
+    padding: 0;
+}
+
+.row-fluid {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.centering {
+    float: none;
+    margin: 0 auto;
+    padding: 7px;
+}
+
+
+/* Background */
+
+.bg-awal {
+    background: #009688;
+}
+
+.bg-materi {
+    background: url(../img/school__by_subtlepatterns.com-2.jpg) center top;
+}
+
+.bg-ijo {
+    background: #388c00 !important;
+}
+
+.font-ijo {
+    color: #388c00 !important;
+}
+
+.bg-biru {
+    background: #0055d4 !important;
+    padding-bottom: 7px;
+}
+
+.bg-materi-02 {
+    background: #f7efcf;
+}
+
+.bg-kayu {
+    background: url(../img/wood-pattern-3.jpg) center top;
+}
+
+.materi-kayu {
+    background: url(../img/wood-pattern-3.jpg) center top;
+    margin: -9px 10px 15px 10px;
+    padding: 17px;
+    color: #333;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 17px 0;
+    font-family: 'roboto_medium';
+}
+
+.materi-ijo {
+    background: #d7f4d7;
+    padding: 9px;
+    color: #444;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    border: 1px solid #c3dec3;
+    -webkit-text-shadow: 1px 1px 5px rgba(1000, 1000, 1000, 1);
+    text-shadow: 1px 1px 5px rgba(1000, 1000, 1000, 1);
+    font-family: 'roboto_medium';
+}
+
+.oval {
+    padding: 3px 23px;
+    border-radius: 999em;
+    font-family: 'roboto_bold';
+}
+
+.bg-fenomena-awal {
+    background: url(../img/confectionary__by_subtlepatterns.com.png) center top;
+}
+
+.bg-fenomena {
+    background: #dedede;
+}
+
+.bg-pin {
+    background: url(../img/fenomena/bg_pin.jpg) center top no-repeat;
+    padding: 23px 13px 23px 15px !important;
+    border: none !important;
+}
+
+.td-satu-baris {
+    padding: 30px 13px 23px 15px !important;
+}
+
+@media (max-width: 320px) {
+    .bg-pin {
+        background: url(../img/fenomena/bg_pin-1.jpg) center top no-repeat;
+        padding: 15px 13px 23px 17px !important;
+        border: none !important;
+        margin: 5px !important;
+    }
+    .td-satu-baris {
+        padding: 23px 13px 23px 17px !important;
+    }
+    .tabel-sjop {
+        margin-left: -12px;
+        text-align: right;
+    }
+}
+
+
+/* Wrap */
+
+#penjelasanumum {
+    text-align: center;
+    min-height: 100%;
+    background: #009688;
+    padding: 7px;
+}
+
+.panel,
+.panel-motivasi {
+    border: 1px solid #e0f2f1;
+    border-radius: 3px;
+    margin: 55px -25px 5px -10px;
+    color: #555;
+    background: #fff;
+}
+
+.panel-motivasi {
+    margin: 50px 0px 0px 0px;
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.side-zero-padding {
+    padding: 10px 0 5px 0;
+}
+
+
+/* Navbar */
+
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar-default {
+    background-color: #00897B;
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    height: 48px;
+}
+
+.navbar-toggle {
+    float: left;
+}
+
+.nav-home a {
+    color: #FFF;
+}
+
+.nav-home a:hover {
+    color: #DDD;
+}
+
+.navbar-tengah {
+    font-family: 'alegreyasans_black' !important;
+}
+
+.navbar-right {
+    float: right;
+}
+
+.nav-font,
+.nav-materi,
+.nav-text-long {
+    color: #fff;
+    font-family: 'alegreyasans_black';
+}
+
+.nav-materi {
+    font-size: 16px;
+}
+
+@media (max-width: 320px) {
+    .nav-materi {
+        line-height: 1.1;
+        font-size: 15px !important;
+        padding-top: 3px !important;
+    }
+    
+    .nav-materi-satu-baris{
+        padding-top: 11px !important;
+    }
+}
+
+.nav-text-long {
+    font-size: 16px;
+    line-height: 1.1;
+    padding-top: 3px;
+}
+
+
+/* Image */
+
+img {
+    padding: 10px !important;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.1);
+    background: none !important;
+    text-shadow: none !important;
+    border-radius: 10 !important;
+}
+
+img.tengah {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-bayang {
+    box-shadow: none;
+}
+
+.gambar-kiri,
+.gambar-kanan,
+.gambar-tengah {
+    display: block;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+.gambar-kiri {
+    float: left;
+    margin: 10px 25px 10px 10px;
+    padding-top: 10px;
+}
+
+.gambar-kanan {
+    float: right;
+}
+
+.gambar-tengah {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    display: block;
+    margin-top: 5px !important;
+    font-size: 13px;
+    font-family: 'roboto_bold';
+    padding: 3px 0;
+    background: #f9f9f9;
+    border: solid 1px #d7eef4;
+    border-radius: 999em;
+}
+
+@media (max-width: 320px) {
+    .gambar-tengah-cilik {
+        width: 285px;
+    }
+}
+
+
+/* Button Next - Prev */
+
+.btn-circle {
+    background-color: none;
+    border-radius: 999em;
+    width: 35px;
+    height: 35px;
+    line-height: 1;
+    font-size: 36px;
+    position: absolute;
+    cursor: pointer;
+    bottom: 10px;
+    left: 89%;
+}
+
+.btn-circle i {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin-top: -22px;
+    color: #00897B;
+    -webkit-text-shadow: 0px 1px 0.3px rgba(0, 0, 0, 0.27);
+    text-shadow: 0px 1px 0.3px rgba(0, 0, 0, 0.27);
+}
+
+.btn-left {
+    left: 80%;
+}
+
+.btn-next {
+    position: fixed;
+    bottom: -5px;
+    right: 7px;
+    text-decoration: none;
+    color: #c83771;
+    background: none;
+    padding: 5px;
+    border-radius: 999em;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-next:hover,
+.btn-up {
+    color: #d35f8d;
+}
+
+.btn-prev {
+    right: 37px;
+}
+
+.btn-up {
+    position: fixed;
+    bottom: -5px;
+    left: 7px;
+    text-decoration: none;
+    color: #c83771;
+    background-color: none;
+    padding: 5px;
+    border-radius: 999em;
+    text-align: center;
+    font-size: 30px;
+}
+
+.sub-bab {
+    margin-bottom: 10px;
+}
+
+.white-color {
+    color: #fff !important;
+}

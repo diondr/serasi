@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serasi | Sistem Respirasi</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="assets/img/serasi-favicon.png">
+
+    <!--Tko bootstrap dkk-->
+    <link href='assets/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/main.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/animate-custom.css' rel='stylesheet' type='text/css'>
+
+    <link href='assets/css/tambah-btn.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-font.css' rel='stylesheet' type='text/css'>
+    <link href='assets/css/tambah-serasi.css' rel='stylesheet' type='text/css'>
+    <link href="assets/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen">
+
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="assets/js/jmodis.js"></script>
+    <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script>
+        $(document).ready(function() {
+            //semua links dengam akhiran ekstensi gambar
+            var thumbnails = 'a[href$=".gif"],a[href$=".jpg"],a[href$=".jpeg"],a[href$=".png"],a[href$=".GIF"],a[href$=".JPG"],a[href$=".JPEG"],a[href$=".PNG"]';
+
+            //menambah class "fancybox" ke thumbnails dan dijadikan satu group "rel" untuk mengaktifkan tombol previous/next
+            jQuery(thumbnails).addClass("fancybox").attr("rel", "lightbox");
+
+            //memanggil fancybox
+            jQuery('.fancybox').fancybox({
+                padding: 0,
+                //mendapatkan alt dari img untuk title fancybox
+                beforeShow: function() {
+                    var alt = this.element.find('img').attr('alt');
+                    this.inner.find('img').attr('alt', alt);
+                    this.title = alt;
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="bg-materi" data-spy="scroll" data-offset="0" data-target="#navbar-main">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background:no  ">
+        <div class="navbar-header">
+            <span class="navbar-toggle nav-home"><a href="home.html"><i class="fa fa-big fa-home"></i></a></span>
+<!--            <span class="navbar-toggle nav-home" style="float:right; padding-right:0px;"><a href="materi-belajar.html"><i class="fa fa-big fa-book"></i></a></span>-->
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-fixed-top" style="padding-top:6px; margin: 0 45px;">
+        <span class="navbar-toggle navbar-brand nav-font">Referensi</span>
+    </nav>
+
+
+    <div class="centering text-center">
+        <div class="panel-motivasi panel-default">
+            <div class="panel-body">
+                <p style="text-align: left;">
+                    Campbell, Reece, Urry, Cain, Wasserman, Minorsky, Jackson. 2008. Biology. San Francisco (USA): Pearson Benjamin Cummings
+                    <br>Faller, A. &amp; Schuenke, M. 2004. The Human Body an Introduction to Structure and Function. New York: Georg Thieme Verlag
+                    <br>Gartner, L.P.&amp; Hiatt, J.L.2006. Interactive Color Atlas of Histology. Philadelphia USA: Lippincott Williams &amp; Wilkins
+                    <br>Longenbaker. 2010. Anatomy and Physiology. Amerika: McGraw- Hill Company
+                    <br>Mescher, A.L. 2010. Junqueira’s Basic Histology Text &amp; Atlas. Amerika: McGraw-Hill Companies
+                    <br>Scanlon,V.C.,&amp; Sander, T. 2007. Essential of Anatomy and Physiology. United States of America: Davis Company
+                    <br>Seeley, R.R.,Stephens, T.D.,&amp; Tate, P. 2008. Anatomy And Physiology. New York: McGraw-Hill
+                    <br>Tortora, J.B.,&amp; Derrickson, B. 2009. Principles Of Anatomy and Physiology. Amerika: John Wiley &amp; Sons, Inc. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/retina.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-func.js"></script>
+</body>
+</html>
