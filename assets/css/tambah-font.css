@@ -13,20 +13,6 @@
 }
 
 @font-face {
-    font-family: 'roboto_black';
-	src: url('../fonts/RobotoTTF/Roboto-Black.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-    font-family: 'roboto_light';
-	src: url('../fonts/RobotoTTF/RobotoCondensed-Light.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
     font-family: 'roboto_medium';
 	src: url('../fonts/RobotoTTF/Roboto-Medium.ttf') format('truetype');
 	font-weight: normal;
@@ -34,8 +20,9 @@
 }
 
 @font-face {
-    font-family: 'alegreyasans_black';
-	src: url('../fonts/alegreya-sans-ht-full-pack-ttf/AlegreyaSans-Black.ttf') format('truetype');
+    font-family: 'alegreyasans_bold';
+	src: url('../fonts/alegreya-sans-ht-full-pack-ttf/AlegreyaSans-ExtraBold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
+

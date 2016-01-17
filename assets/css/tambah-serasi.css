@@ -13,7 +13,7 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'alegreyasans_black';
+    font-family: 'alegreyasans_bold';
 }
 
 p {
@@ -228,7 +228,7 @@ strong {
 }
 
 .navbar-tengah {
-    font-family: 'alegreyasans_black' !important;
+    font-family: 'alegreyasans_bold' !important;
 }
 
 .navbar-right {
@@ -239,7 +239,7 @@ strong {
 .nav-materi,
 .nav-text-long {
     color: #fff;
-    font-family: 'alegreyasans_black';
+    font-family: 'alegreyasans_bold';
 }
 
 .nav-materi {
