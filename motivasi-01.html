@@ -22,37 +22,44 @@
     <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
     <script type="text/javascript" src="assets/js/jmodis.js"></script>
     <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        function playVideoM1() {
+            VideoPlayer.play("file:///android_asset/www/assets/videos/motivasi_1.m4v");
+        }
+
+        function playVideoM2() {
+            VideoPlayer.play("file:///android_asset/www/assets/videos/motivasi_2.m4v");
+        }
+    </script>
 </head>
 
 <body class="bg-materi" data-spy="scroll" data-offset="0" data-target="#navbar-main">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background:no  ">
         <div class="navbar-header">
             <span class="navbar-toggle nav-home"><a href="home.html"><i class="fa fa-big fa-home"></i></a></span>
-            <!--            <span class="navbar-toggle nav-home" style="float:right; padding-right:0px;"><a href="home.html"><i class="fa fa-big fa-home"></i></a></span>-->
         </div>
     </nav>
 
     <nav class="navbar navbar-fixed-top" style="padding-top:6px; margin: 0 45px;">
         <span class="navbar-toggle navbar-brand nav-font">Motivasi</span>
     </nav>
-    
+
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="centering text-center">
                 <div class="panel-motivasi panel-default">
                     <div class="panel-body">
-                        <div class="col-xs-6 col-sm-6 col-md-6">
-                            <a class="btn btn-danger btn-block" href="#">Video 1</a>
-                        </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6">
-                            <a class="btn btn-danger btn-block" href="#">Video 2</a>
-                        </div>
-                        <br>
-                        <br><br>
-                        <div class="jumbotron" style="padding: 0; margin-top:20px;">
-                            <video width="100%" controls poster="assets/img/serasi-logo-255.png">
-                                <source src="assets/videos/04-Transpor%20Karbondioksida-1.mp4"> Your browser does not support the <code>video</code> element.
-                            </video>
+                        <div class="area-video">
+                            <div class="row" style="margin-left:20px;">
+                                <button onclick="playVideoM1();" class="btn btn-default  col-xs-5"><i class="fa fa-lg fa-play"></i>
+                                    <br>Play Video 1</button>
+                                <button onclick="playVideoM2();" class="btn btn-danger col-xs-offset-1 col-xs-5"><i class="fa fa-lg fa-play"></i>
+                                    <br>Play Video 2</button>
+                            </div>
+                            <br>
+                            <br>
+                            <p>Tekan tombol Play untuk memutar video</p>
                         </div>
                     </div>
                 </div>

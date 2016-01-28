@@ -22,6 +22,12 @@
     <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
     <script type="text/javascript" src="assets/js/jmodis.js"></script>
     <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        function playVideo5() {
+            VideoPlayer.play("file:///android_asset/www/assets/videos/5_02_Transpor_Oksigen.m4v");
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -42,10 +48,12 @@
                 <div class="panel-motivasi panel-default">
                     <div class="panel-body">
                         <h4>Transport Oksigen</h4>
-                        <div class="jumbotron" style="padding: 0; margin-top:20px;">
-                            <video width="100%" controls poster="assets/img/serasi-logo-255.png">
-                                <source src="assets/videos/04-Transpor%20Karbondioksida-1.mp4"> Your browser does not support the <code>video</code> element.
-                            </video>
+                        <div class="area-video">
+                            <button onclick="playVideo5();" class="btn btn-danger"><i class="fa fa-lg fa-play"></i>
+                                <br>Play</button>
+                            <br>
+                            <br>
+                            <p>Tekan tombol Play untuk memutar video</p>
                         </div>
                     </div>
                 </div>

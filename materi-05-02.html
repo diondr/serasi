@@ -23,6 +23,12 @@
     <script type="text/javascript" src="assets/js/jmodis.js"></script>
     <script type="text/javascript" src="assets/fancybox/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="assets/js/html5lightbox/html5lightbox.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        function playVideo6() {
+            VideoPlayer.play("file:///android_asset/www/assets/videos/6_04_Transpor_Karbondioksida.m4v");
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -43,19 +49,12 @@
                 <div class="panel-motivasi panel-default">
                     <div class="panel-body">
                         <h4>Transport Karbondioksida</h4>
-                        <div class="jumbotron" style="padding: 0; margin-top:20px;">
-<!--
-                            <video width="100%" controls>
-                                <source src="assets/videos/04-Transpor_Karbondioksida-rev2.1.m4v"> Your device does not support the <code>video</code> element.
-                            </video>
--->
-                            
-                            <a href="assets/videos/04-Transpor_Karbondioksida.m4v" class="html5lightbox btn btn-primary" data-thumbnail="assets/img/icon-96-xhdpi.png" title="Transpor Karbondioksida"><i class="fa fa-lg fa-play"></i><br>Tekan untuk memutar video  </a>
-<!--
-                            <video width="100%" controls>
-                                <source src="android.resource://com.diondr.serasi/raw/04_Transpor_Karbondioksida"> Your device does not support the video element.
-                            </video>
--->
+                        <div class="area-video">
+                            <button onclick="playVideo6();" class="btn btn-danger"><i class="fa fa-lg fa-play"></i>
+                                <br>Play</button>
+                            <br>
+                            <br>
+                            <p>Tekan tombol Play untuk memutar video</p>
                         </div>
                     </div>
                 </div>
@@ -64,7 +63,7 @@
     </div>
 
     <a href="materi-05-01.html" class="btn-next btn-prev btn-lg"><i class="fa fa-arrow-circle-left"></i></a>
-    <a href="materi-06.html" class="btn-next btn-lg"><i class="fa fa-arrow-circle-right"></i></a>
+    <a href="fenomena.html" class="btn-next btn-lg"><i class="fa fa-arrow-circle-right"></i></a>
 
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/retina.js"></script>
