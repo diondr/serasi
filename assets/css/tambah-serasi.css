@@ -197,6 +197,15 @@ strong {
     padding: 10px 0 5px 0;
 }
 
+.area-video {
+    background: #777;
+    padding: 30px 9px 20px 9px;
+    font-family: 'roboto_bold';
+    color: #fff;
+    border-top: 35px solid #333;
+    border-bottom: 35px solid #333;
+}
+
 
 /* Navbar */
 
@@ -252,8 +261,7 @@ strong {
         font-size: 15px !important;
         padding-top: 3px !important;
     }
-    
-    .nav-materi-satu-baris{
+    .nav-materi-satu-baris {
         padding-top: 11px !important;
     }
 }
